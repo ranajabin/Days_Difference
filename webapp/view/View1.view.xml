@@ -1,0 +1,26 @@
+<mvc:View controllerName="calculatedate1.calculatedateproject.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+    <Page id="page" title="Date Difference" class="custProfilePage">
+        <content>
+            <VBox alignContent="Center" alignItems="Center" class=".sapUiBody">
+                <f:SimpleForm editable="true" alignItems="Center" alignContent="Center" width="350px" emptySpanL="12" emptySpanM="12" emptySpanS="12" class=".sapMFlexBoxBGTransparent">
+                    <f:content>
+                        <VBox alignContent="Center" alignItems="Center">
+                            <HBox>
+                                <Label text="Enter first Date: " />
+                                <!-- <Input value = "" id = "inp1" type = "date" width = "150px" height = "120px" />  -->
+                                <DatePicker displayFormat="short" id="inp1" />
+                            </HBox>
+
+                            <HBox>
+                                <Label text="Enter second Date:" />
+                                <!-- <Input value = "" id = "inp2" type = "date" width="50px" height = "120px"></Input> -->
+                                <DatePicker displayFormat="short" id="inp2" />
+                            </HBox>
+                            <Button text="Difference" type="Emphasized" press="onPressDiff" />
+                        </VBox>
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
